@@ -79,7 +79,7 @@ async function validateUserCredential(email, password) {
   return result ? result : false;
 }
 
-function createNewUser(name, email, password) {
+function createNewUser(name.value, email.value, password.value) {
   var user = { name: name, email: email, password: password };
   var result = userExists(userData, user);
   return result;
