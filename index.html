@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <h1>Signup Form</h1>
+            <div class="slide-controls">
+                <input type="radio" name="slide" id="login" onchange="checkForm()" checked>
+                <input type="radio" name="slide" id="signup" onchange="checkForm()">
+                <label for="login" class="slide login">Login</label>
+                <label for="signup" class="slide signup">Signup</label>
+                <div class="slider-tab">
+                </div>
+              </div>
+        
+        <form action="#" id="submit-form">
+            <input  id="name"   type="text" placeholder="Name" required disabled style="display: none;">
+            <input id="email" type="email" placeholder="Email Address" required>
+            <input  id="password" type="password" placeholder="Password" required>
+            <input id="confirm-password" type="password" placeholder="Confirm Password" required disabled style="display: none;">
+            <button type="submit" class="submit-btn" id="form-btn">Log in</button>
+        </form>
+       <div class="login">
+           <span>Already have an account? </span><a href="#">Login</a>
+       </div>
+ </div>
+ <script src="main.js"></script>
+</body>
+</html>
